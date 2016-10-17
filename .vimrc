@@ -21,14 +21,31 @@ call plug#begin()
 
 Plug 'junegunn/seoul256.vim'
 Plug 'romainl/Apprentice'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
 colo apprentice
+
+set noerrorbells
+
+filetype plugin indent on
+"to have different settings for different file types:
+"autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 set tabstop=4
 set shiftwidth=4
 set showmatch "shows matching brackets
 set smarttab
 
-set wildmenu
+set wildmenu "visual autocomplete for command menu
+
+"search stuff
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
+"ui stuff
+set number "show line numbers
+"set cursorline "highlight current line
