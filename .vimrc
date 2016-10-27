@@ -48,4 +48,6 @@ set hlsearch
 
 "ui stuff
 set number "show line numbers
+set relativenumber
+set lazyredraw "relative numbers is too slow without this
 "set cursorline "highlight current line
